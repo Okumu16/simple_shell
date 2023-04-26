@@ -28,3 +28,23 @@ char *get_command(char *line, FILE *stream)
 			exit(EXIT_SUCCESS);
 	return (line);
 }
+
+/**
+ * get_tokens - get tokens from a command
+ * @command: the command
+ *
+ * Return: tokens
+*/
+char **get_tokens(const char *command)
+{
+	size_t token_num, token_pos;
+	char *token, **tokens, delimiters[] = {' ', '\n', '\t', '\a'};
+
+	token_num = 64;			/* Let our commands have a maximum of 64 tokens */
+	tokens = malloc(token_num * sizeof(char *));
+	if (!tokens)
+	{
+		perror("Failed to allocate memory");
+		return (NULL);
+	}
+}
