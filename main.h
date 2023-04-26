@@ -9,7 +9,7 @@
 
 #include <string.h>
 #include <unistd.h>         /* contains fork() */
-#include <sys/types.h>      /* contains pid_t struct */ 
+#include <sys/types.h>      /* contains pid_t struct */
 #include <sys/wait.h>       /* contains wait */
 
 
