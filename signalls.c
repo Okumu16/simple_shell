@@ -11,3 +11,13 @@ void sig_handler(int sign_id)
 	if (sign_id == SIGINT)
 		write(STDOUT_FILENO, "\n($) ", 5);
 }
+
+/**
+ * openHelp - Opens the Shell help
+ *
+ * Return: void
+ */
+void openHelp(void)
+{
+	_enter("\n***WELCOME TO THE SHELL HELP***\n");
+}
